@@ -16,7 +16,14 @@ body{
 }
 .container{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    z-index: 1;
 }
+
 .clock{
     width: 500px;
     height: 500px;
@@ -51,6 +58,7 @@ body{
         box-shadow: 0 0 100px purple;
     }
 }
+    
 .wrapper{
     position: relative;
     width: 500px;
@@ -197,3 +205,37 @@ body{
     border-radius: 50%;
     box-shadow: 0 0 5px black;
 }
+
+
+
+button {
+    position: relative;
+    z-index: 2;
+    margin-top: 40px;
+    padding: 8px 15px; 
+    font-size: 20px; 
+    border: none; 
+    border-radius: 20px; 
+    background-color: white; 
+    color: black; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease;
+}
+
+.buttons {
+    margin-top: 60px;
+    z-index: 2;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+#playButton {
+    margin-right: 0.5cm; /* Add a margin to the right of the play button */
+}
+
+#pauseButton {
+    margin-left: 0.5cm; /* Add a margin to the left of the pause button */
+}
+
