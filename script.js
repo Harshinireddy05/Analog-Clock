@@ -19,31 +19,6 @@ seconds.insertAdjacentHTML("afterbegin", secondsElement.join(""));
 
 //time
 
-/*function updateClock() {
-    const now = new Date();
-    
-    const hours = now.getHours();
-    const minutes = now.getMinutes();
-    const seconds = now.getSeconds();
-
-    const hourHand = document.getElementById('hour');
-    const minuteHand = document.getElementById('min');
-    const secondHand = document.getElementById('sec');
-
-    const hourDegrees = ((hours % 12) + minutes / 60) * 30; 
-    const minuteDegrees = (minutes + seconds / 60) * 6; 
-    const secondDegrees = seconds * 6; 
-
-    hourHand.style.transform = `rotate(${hourDegrees}deg)`;
-    minuteHand.style.transform = `rotate(${minuteDegrees}deg)`;
-    secondHand.style.transform = `rotate(${secondDegrees}deg)`;
-}
-
-setInterval(updateClock, 1000);
-
-updateClock();*/
-
-
 document.getElementById('playButton').addEventListener('click', startClock);
 document.getElementById('pauseButton').addEventListener('click', pauseClock);
 
